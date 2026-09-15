@@ -113,6 +113,14 @@ nav a:hover {
     color: #38bdf8;
 }
 
+.hero h1 small {
+display: block;
+margin-top: 12px;
+font-size: 22px;
+color: #dbeafe;
+font-weight: normal;
+}
+
 .hero p {
     font-size: 19px;
     margin-bottom: 30px;
@@ -544,6 +552,11 @@ footer p {
         font-size: 38px;
         line-height: 1.4;
     }
+
+    .hero h1 small {
+font-size: 16px;
+margin-top: 10px;
+}
 
     .hero p {
         font-size: 17px;
