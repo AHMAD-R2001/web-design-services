@@ -603,3 +603,38 @@ margin-top: 10px;
         display: none;
     }
 }
+
+/* =========================
+   صفحة الخدمات
+========================= */
+
+.services-page {
+    text-align: center;
+}
+
+.services-page .hero {
+    min-height: 70vh;
+}
+
+.services-page .section {
+    background: #f5f7fb;
+}
+
+.services-page .cards {
+    margin-top: 20px;
+}
+
+.services-page .card {
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.services-page .offer {
+    margin-top: 0;
+}
+
+.services-page .contact {
+    margin-top: 0;
+}
