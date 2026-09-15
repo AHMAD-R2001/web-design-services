@@ -638,3 +638,18 @@ margin-top: 10px;
 .services-page .contact {
     margin-top: 0;
 }
+
+/* =========================
+نماذج التصميم
+========================= */
+
+.model-label {
+display: inline-block;
+margin-top: 15px;
+padding: 6px 14px;
+background: #eef2ff;
+color: #2563eb;
+border-radius: 20px;
+font-size: 14px;
+font-weight: bold;
+}
