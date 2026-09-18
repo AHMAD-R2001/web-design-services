@@ -368,16 +368,20 @@ footer h3 {
 @media (max-width: 600px) {
     .hero {
         min-height: auto;
-        padding: 40px 20px;
+        padding: 30px 15px;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-width: 280px;
+        margin: 20px auto 0;
     }
 
     .hero-image img {
         width: 100%;
-        max-width: 320px;
-        height: 220px;
+        height: 180px;
         object-fit: cover;
-        border-radius: 18px;
+        border-radius: 15px;
         display: block;
-        margin: 0 auto;
     }
 }
