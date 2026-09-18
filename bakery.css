@@ -364,3 +364,20 @@ footer h3 {
         grid-template-columns: 1fr;
     }
 }
+
+@media (max-width: 600px) {
+    .hero {
+        min-height: auto;
+        padding: 40px 20px;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 320px;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 18px;
+        display: block;
+        margin: 0 auto;
+    }
+}
