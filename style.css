@@ -253,10 +253,6 @@ nav a:hover {
     align-items: center;
 }
 
-.work-card:hover {
-    transform: translateY(-8px);
-}
-
 .work-icon {
     font-size: 60px;
     margin-bottom: 15px;
