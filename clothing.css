@@ -1,0 +1,513 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f6f2;
+    color: #171717;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    height: 86px;
+    padding: 0 6%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #f7f6f2;
+    border-bottom: 1px solid #dddcd7;
+}
+
+.fashion-logo {
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 4px;
+}
+
+.fashion-logo span {
+    display: block;
+    font-size: 8px;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top: -5px;
+}
+
+nav {
+    display: flex;
+    gap: 32px;
+}
+
+nav a {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.header-icon {
+    font-size: 20px;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.fashion-hero {
+    min-height: 650px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background: #e6e3dc;
+}
+
+.fashion-image {
+    min-height: 650px;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.08),
+            rgba(0,0,0,0.08)
+        ),
+        url("clothing.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+}
+
+.image-label {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+
+    padding: 8px 15px;
+
+    background: white;
+    color: #111;
+
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.fashion-content {
+    padding: 70px 10%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fashion-content > span {
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #77736b;
+}
+
+.fashion-content h1 {
+    font-size: clamp(55px, 7vw, 90px);
+    line-height: 0.95;
+    letter-spacing: -5px;
+
+    margin: 20px 0 30px;
+}
+
+.fashion-content p {
+    max-width: 420px;
+    color: #66625c;
+    margin-bottom: 35px;
+}
+
+.shop-button {
+    align-self: flex-start;
+
+    padding: 14px 30px;
+
+    background: #171717;
+    color: white;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.shop-button:hover {
+    background: #444;
+}
+
+/* =========================
+   COLLECTION
+========================= */
+
+.collection {
+    padding: 110px 7%;
+}
+
+.collection-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    margin-bottom: 60px;
+}
+
+.collection-heading span {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #777;
+}
+
+.collection-heading h2 {
+    font-size: 48px;
+    margin-top: 8px;
+}
+
+.collection-heading p {
+    max-width: 300px;
+    color: #777;
+}
+
+.fashion-products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px 35px;
+}
+
+.fashion-product {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    min-height: 320px;
+
+    border-top: 1px solid #cfcfc9;
+    padding-top: 20px;
+}
+
+.product-photo {
+    min-height: 320px;
+
+    position: relative;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.photo-one {
+    background-image: url("shirt.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.photo-two {
+    background-image: url("jacket.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.photo-three {
+    background-image: url("pants.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.photo-four {
+    background-image: url("outfit.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #e6e3dc;
+}
+
+.product-photo span {
+    padding: 10px 13px;
+
+    background: white;
+
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.product-details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-details h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.product-details p {
+    color: #777;
+    font-size: 13px;
+}
+
+.product-details strong {
+    margin-top: auto;
+    font-size: 18px;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.fashion-about {
+    min-height: 550px;
+    padding: 100px 10%;
+
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    gap: 60px;
+    align-items: center;
+
+    background: #171717;
+    color: white;
+}
+
+.about-number {
+    font-size: 130px;
+    font-weight: 900;
+    color: #333;
+}
+
+.about-text {
+    max-width: 650px;
+}
+
+.about-text > span {
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #aaa;
+}
+
+.about-text h2 {
+    font-size: 70px;
+    line-height: 0.95;
+    margin: 20px 0 30px;
+}
+
+.about-text p {
+    color: #aaa;
+    max-width: 500px;
+    margin-bottom: 12px;
+}
+
+/* =========================
+   STATS
+========================= */
+
+.fashion-stats {
+    padding: 70px 8%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    background: #e6e3dc;
+}
+
+.fashion-stats div {
+    padding: 20px;
+    border-right: 1px solid #c9c7c0;
+}
+
+.fashion-stats div:last-child {
+    border-right: none;
+}
+
+.fashion-stats strong {
+    display: block;
+    font-size: 50px;
+    line-height: 1;
+}
+
+.fashion-stats span {
+    color: #777;
+    font-size: 13px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.fashion-contact {
+    padding: 110px 8%;
+    text-align: center;
+}
+
+.fashion-contact > span {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #777;
+}
+
+.fashion-contact h2 {
+    font-size: 55px;
+    margin: 15px 0;
+}
+
+.fashion-contact p {
+    color: #777;
+}
+
+.fashion-contact-info {
+    margin-top: 35px;
+
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+
+    font-size: 14px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 35px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #111;
+    color: #aaa;
+}
+
+footer .fashion-logo {
+    color: white;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    header {
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .fashion-hero {
+        grid-template-columns: 1fr;
+    }
+
+.fashion-image {
+    min-height: 650px;
+    background-image: url("clothing.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #e6e3dc;
+    position: relative;
+}
+
+    .fashion-content {
+        padding: 60px 25px;
+    }
+
+    .fashion-content h1 {
+        font-size: 60px;
+    }
+
+    .collection {
+        padding: 80px 25px;
+    }
+
+    .collection-heading {
+        display: block;
+    }
+
+    .collection-heading h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .fashion-products {
+        grid-template-columns: 1fr;
+    }
+
+    .fashion-product {
+        grid-template-columns: 1fr 0.8fr;
+    }
+
+    .product-photo {
+        min-height: 280px;
+    }
+
+    .fashion-about {
+        grid-template-columns: 1fr;
+        padding: 80px 25px;
+    }
+
+    .about-number {
+        font-size: 80px;
+    }
+
+    .about-text h2 {
+        font-size: 50px;
+    }
+
+    .fashion-stats {
+        grid-template-columns: 1fr;
+        padding: 50px 25px;
+    }
+
+    .fashion-stats div {
+        border-right: none;
+        border-bottom: 1px solid #c9c7c0;
+    }
+
+    .fashion-contact h2 {
+        font-size: 40px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
