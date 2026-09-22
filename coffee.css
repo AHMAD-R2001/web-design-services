@@ -1,0 +1,475 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f1e8;
+    color: #171914;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    height: 90px;
+    padding: 0 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #f3f1e8;
+    border-bottom: 1px solid #d4d2c7;
+}
+
+.coffee-logo {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #66734a;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.coffee-hero {
+    min-height: 650px;
+    padding: 80px 7%;
+
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+    gap: 50px;
+
+    background: #f3f1e8;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.small-title {
+    display: inline-block;
+
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 4px;
+
+    color: #66734a;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: clamp(55px, 8vw, 100px);
+    line-height: 0.95;
+    letter-spacing: -5px;
+
+    margin-bottom: 30px;
+}
+
+.hero-content p {
+    max-width: 500px;
+    color: #64655d;
+    font-size: 17px;
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.main-button,
+.outline-button {
+    padding: 13px 27px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.main-button {
+    background: #171914;
+    color: white;
+}
+
+.outline-button {
+    border: 1px solid #171914;
+}
+
+.main-button:hover {
+    background: #66734a;
+}
+
+.outline-button:hover {
+    background: #171914;
+    color: white;
+}
+
+/* =========================
+   COFFEE SYMBOL
+========================= */
+
+.coffee-cup {
+    width: 330px;
+    height: 430px;
+
+    margin: auto;
+
+    background:
+        linear-gradient(
+            145deg,
+            #77845c,
+            #4d563b
+        );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 150px;
+
+    transform: rotate(3deg);
+    box-shadow: 25px 25px 0 #d8d5c8;
+}
+
+/* =========================
+   MENU
+========================= */
+
+.menu {
+    padding: 110px 10%;
+    background: #171914;
+    color: white;
+}
+
+.menu-heading {
+    max-width: 700px;
+    margin-bottom: 60px;
+}
+
+.menu-heading span {
+    color: #aab58e;
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+
+.menu-heading h2 {
+    font-size: 55px;
+    margin: 8px 0;
+}
+
+.menu-heading p {
+    color: #aaa;
+}
+
+.menu-grid {
+    max-width: 1000px;
+}
+
+.menu-item {
+    min-height: 120px;
+    padding: 25px 0;
+
+    display: grid;
+    grid-template-columns: 80px 1fr 120px;
+    align-items: center;
+
+    border-top: 1px solid #45483e;
+
+    transition: 0.3s;
+}
+
+.menu-item:last-child {
+    border-bottom: 1px solid #45483e;
+}
+
+.menu-item:hover {
+    padding-right: 15px;
+    padding-left: 15px;
+    background: #20231c;
+}
+
+.menu-number {
+    color: #7e8c61;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.menu-info h3 {
+    font-size: 25px;
+}
+
+.menu-info p {
+    color: #999;
+    font-size: 14px;
+}
+
+.menu-item strong {
+    text-align: left;
+    color: #c3caa9;
+    font-size: 18px;
+}
+
+/* =========================
+   STORY
+========================= */
+
+.story {
+    padding: 120px 8%;
+
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 100px;
+    align-items: center;
+
+    background: #e4e1d5;
+}
+
+.story-image {
+    min-height: 420px;
+
+    background: #66734a;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 150px;
+
+    box-shadow: 20px 20px 0 #c9c6b9;
+}
+
+.story-text {
+    max-width: 600px;
+}
+
+.story-text > span {
+    color: #66734a;
+    font-size: 12px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.story-text h2 {
+    font-size: 55px;
+    line-height: 1.05;
+    margin: 15px 0 25px;
+}
+
+.story-text p {
+    color: #62635c;
+    margin-bottom: 15px;
+}
+
+.story-text a {
+    display: inline-block;
+    margin-top: 20px;
+
+    font-weight: bold;
+    border-bottom: 2px solid #66734a;
+}
+
+/* =========================
+   EXPERIENCE
+========================= */
+
+.experience {
+    padding: 80px 8%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    background: #f3f1e8;
+}
+
+.experience div {
+    padding: 30px;
+
+    border-left: 1px solid #d0cec3;
+}
+
+.experience div:last-child {
+    border-left: none;
+}
+
+.experience span {
+    font-size: 30px;
+}
+
+.experience h3 {
+    margin: 10px 0;
+    font-size: 21px;
+}
+
+.experience p {
+    color: #77786f;
+    font-size: 14px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.coffee-contact {
+    padding: 110px 8%;
+    text-align: center;
+
+    background: #66734a;
+    color: white;
+}
+
+.coffee-contact > span {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #dce2c9;
+}
+
+.coffee-contact h2 {
+    font-size: 70px;
+    margin: 5px 0;
+}
+
+.coffee-contact p {
+    color: #e1e5d7;
+}
+
+.contact-details {
+    margin-top: 35px;
+
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+
+    font-size: 14px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 35px 20px;
+    text-align: center;
+
+    background: #11120f;
+    color: #999;
+}
+
+footer h3 {
+    color: white;
+    margin-bottom: 5px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    header {
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .coffee-hero {
+        grid-template-columns: 1fr;
+        padding: 70px 25px;
+    }
+
+    .hero-content h1 {
+        font-size: 58px;
+        letter-spacing: -3px;
+    }
+
+    .coffee-cup {
+        width: 230px;
+        height: 300px;
+        font-size: 100px;
+    }
+
+    .menu {
+        padding: 80px 25px;
+    }
+
+    .menu-heading h2 {
+        font-size: 42px;
+    }
+
+    .menu-item {
+        grid-template-columns: 45px 1fr 75px;
+    }
+
+    .menu-info h3 {
+        font-size: 19px;
+    }
+
+    .menu-info p {
+        font-size: 12px;
+    }
+
+    .story {
+        grid-template-columns: 1fr;
+        gap: 60px;
+        padding: 80px 25px;
+    }
+
+    .story-text h2 {
+        font-size: 42px;
+    }
+
+    .experience {
+        grid-template-columns: 1fr;
+        padding: 60px 25px;
+    }
+
+    .experience div {
+        border-left: none;
+        border-bottom: 1px solid #d0cec3;
+    }
+
+    .coffee-contact h2 {
+        font-size: 50px;
+    }
+
+    .contact-details {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
