@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
 <url>
 <loc>https://ahmad-r2001.github.io/web-design-services/</loc>
 </url>
+
+<url>
+<loc>https://ahmad-r2001.github.io/web-design-services/services.html</loc>
+</url>
+
+<url>
+<loc>https://ahmad-r2001.github.io/web-design-services/abu-rashed-new/index.html</loc>
+</url>
+
+<url>
+<loc>https://ahmad-r2001.github.io/web-design-services/bakery/bakery.html</loc>
+</url>
+
+<url>
+<loc>https://ahmad-r2001.github.io/web-design-services/sweets/sweets.html</loc>
+</url>
+
+<url>
+<loc>https://ahmad-r2001.github.io/web-design-services/coffee/coffee.html</loc>
+</url>
+
+<url>
+<loc>https://ahmad-r2001.github.io/web-design-services/clothing/clothing.html</loc>
+</url>
+
+<url>
+<loc>https://ahmad-r2001.github.io/web-design-services/restaurant/restaurant.html</loc>
+</url>
+
 </urlset>
